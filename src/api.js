@@ -4,5 +4,5 @@ const API=axios.create({
 })
 export const registerUser=(userData)=>API.post('/register',userData);
 export const loginUser=(userData)=>API.post('/login',userData);
-export const forgotPassword=(email)=>API.post('/forgot-password',{email});
-export const resetPassword=(token,password)=>API.post(`/reset-password/${token}`,{password})
+export const forgotPassword=(email)=>API.post('https://resetpasswordbackend.onrender.com/api/forgot-password',{email});
+export const resetPassword=(token,password)=>API.post(`https://resetpasswordbackend.onrender.com/api/reset-password/${token}`,{password})
