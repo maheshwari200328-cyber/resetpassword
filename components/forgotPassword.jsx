@@ -15,6 +15,7 @@ function ForgotPassword() {
            navigate('/message', {
     state: { message: res.data.message }
 });
+  console.log("ResetPassword Page Loaded");
 
 
         }

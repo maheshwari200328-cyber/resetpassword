@@ -18,6 +18,8 @@ function ResetPassword() {
             const res = await resetPassword(token, password);
 
             navigate('/message', { state: { message: res.data.message } });
+          
+
         }
         catch (err) {
             navigate('/message', {

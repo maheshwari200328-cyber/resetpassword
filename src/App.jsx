@@ -12,7 +12,7 @@ function App() {
       <BrowserRouter>
       <Routes>
         <Route path='/' element={<ForgotPassword/> }/>
-          <Route path='/reset-password/:token' element={<ResetPassword/> }/>
+          <Route path='/resetpassword/:token' element={<ResetPassword/> }/>
           <Route path="/message" element={<Message />} />
 
 
